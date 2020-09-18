@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HOMEWORKS</string>
+    <string name="textView">Homework</string>
+    <string name="textView2">My First App</string>
+    <string name="button1">HW #1</string>
+    <string name="button2">HW #2</string>
+    <string name="button3">HW #3</string>
+    <string name="textSize">40dp</string>
+    <string name="fontFamily">sans-serif-medium</string>
+</resources>
