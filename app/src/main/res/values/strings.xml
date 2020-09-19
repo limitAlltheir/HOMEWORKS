@@ -7,4 +7,5 @@
     <string name="button3">HW #3</string>
     <string name="textSize">40dp</string>
     <string name="fontFamily">sans-serif-medium</string>
+    <string name="editText">Enter image URL</string>
 </resources>
