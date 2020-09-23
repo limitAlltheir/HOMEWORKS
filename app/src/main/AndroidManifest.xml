@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Hw3Activity"></activity>
+        <activity android:name=".FlagsActivity"></activity>
+        <activity android:name=".Hw3Activity" />
 
         <uses-library
             android:name="org.apache.http.legacy"

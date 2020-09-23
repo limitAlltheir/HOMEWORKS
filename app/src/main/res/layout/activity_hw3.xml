@@ -8,7 +8,7 @@
     android:background="@drawable/bg_hw_one_activity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonFlags"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="FLAGS"
@@ -19,11 +19,12 @@
         android:layout_marginBottom="80dp" />
 
     <Button
+        android:id="@+id/buttonCat"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="CAT"
         android:textColor="@color/colorPrimaryDark"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/buttonFlags"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginBottom="16dp"/>
