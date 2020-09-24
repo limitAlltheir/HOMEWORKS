@@ -14,5 +14,10 @@ class Hw3Activity : AppCompatActivity() {
             val myIntent = Intent(this, FlagsActivity::class.java)
             startActivity(myIntent)
         }
+
+        buttonCat.setOnClickListener {
+            val myIntent = Intent(this, CatActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
