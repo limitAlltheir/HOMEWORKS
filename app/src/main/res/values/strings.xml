@@ -8,4 +8,9 @@
     <string name="textSize">40dp</string>
     <string name="fontFamily">sans-serif-medium</string>
     <string name="editText">Enter image URL</string>
+    <string name="belarus">Belarus</string>
+    <string name="latvia">Latvia</string>
+    <string name="poland">Poland</string>
+    <string name="lithuania">Lithuania</string>
+    <string name="ukraine">Ukraine</string>
 </resources>

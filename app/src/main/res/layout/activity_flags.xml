@@ -50,7 +50,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="106dp"
-                    android:text="Belarus"
+                    android:text="@string/belarus"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
             </FrameLayout>
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="106dp"
-                    android:text="Latvia"
+                    android:text="@string/latvia"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
             </FrameLayout>
@@ -121,7 +121,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="106dp"
-                    android:text="Poland"
+                    android:text="@string/poland"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
             </FrameLayout>
@@ -160,7 +160,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="106dp"
-                    android:text="Lithuania"
+                    android:text="@string/lithuania"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
             </FrameLayout>
@@ -191,7 +191,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="106dp"
-                    android:text="Ukraine"
+                    android:text="@string/ukraine"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
             </FrameLayout>
