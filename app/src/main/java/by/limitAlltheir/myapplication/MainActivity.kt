@@ -12,8 +12,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         button1.setOnClickListener {
-            Log.i("TAG", "ERROR HERE")
             val myIntent = Intent(this, hw1Activity::class.java)
+            startActivity(myIntent)
+        }
+        button2.setOnClickListener {
+            val myIntent = Intent(this, Hw3Activity::class.java)
             startActivity(myIntent)
         }
     }
