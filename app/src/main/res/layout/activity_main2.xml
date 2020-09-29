@@ -24,7 +24,7 @@
             android:orientation="horizontal">
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="130dp"
                 android:orientation="vertical">
@@ -34,8 +34,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="32dp"
-                    android:gravity="center_horizontal"
-                    android:text="Minsk"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/minsk"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="60sp" />
 
@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="96dp"
-                    android:text="Potatoes:"
+                    android:text="@string/potatoes"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -63,7 +63,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="136dp"
-                    android:text="Cabbage:"
+                    android:text="@string/cabbage"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -82,7 +82,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="176dp"
-                    android:text="Carrot:"
+                    android:text="@string/carrot"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -98,7 +98,7 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="130dp"
                 android:orientation="vertical">
@@ -108,8 +108,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="32dp"
-                    android:gravity="center_horizontal"
-                    android:text="Brest"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/brest"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="60sp" />
 
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="96dp"
-                    android:text="Potatoes:"
+                    android:text="@string/potatoes"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -137,7 +137,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="136dp"
-                    android:text="Cabbage:"
+                    android:text="@string/cabbage"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -156,7 +156,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="176dp"
-                    android:text="Carrot:"
+                    android:text="@string/carrot"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -172,9 +172,9 @@
             </FrameLayout>
 
             <FrameLayout
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="130dp"
+                android:layout_marginHorizontal="130dp"
                 android:orientation="vertical">
 
                 <TextView
@@ -182,8 +182,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="32dp"
-                    android:gravity="center_horizontal"
-                    android:text="Pinsk"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/pinsk"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="60sp" />
 
@@ -192,7 +192,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="96dp"
-                    android:text="Potatoes:"
+                    android:text="@string/potatoes"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -211,7 +211,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="136dp"
-                    android:text="Cabbage:"
+                    android:text="@string/cabbage"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -230,7 +230,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
                     android:layout_marginTop="176dp"
-                    android:text="Carrot:"
+                    android:text="@string/carrot"
                     android:textColor="@color/colorPrimaryDark"
                     android:textSize="30sp" />
 
@@ -252,9 +252,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="16dp"
-        android:text="Start"
+        android:text="@string/start"
         android:textColor="@color/colorPrimaryDark"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+    <TextView
+        android:id="@+id/winner_view"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_margin="16dp"
+        android:background="#80FFFFFF"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/start_harvest_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />

@@ -44,12 +44,15 @@ class MainActivity2 : AppCompatActivity() {
         myViewModel.pinsk_carrot.observe(this, Observer {
             pinsk_carrot.text = it.toString()
         })
+        myViewModel.nameWinner.observe(this, Observer {
+            winner_view.text = it.toString()
+        })
 
         start_harvest_button.setOnClickListener()
         {
             myViewModel.userClicked()
         }
 
-        myViewModel.showWinner(this)
+
     }
 }

@@ -9,7 +9,7 @@ import java.security.acl.Owner
 
 class MyViewModel : ViewModel() {
 
-    var nameWinner: String = ""
+    var nameWinner = MutableLiveData<String>("")
 
     var minsk_potato = MutableLiveData<Int>(0)
     var pinsk_potato = MutableLiveData<Int>(0)
@@ -60,6 +60,10 @@ class MyViewModel : ViewModel() {
                 var p_cr = pinsk_carrot.value
                 p_cr = p_cr?.plus((0..5).random())
                 pinsk_carrot.postValue(p_cr)
+
+                var n_w = nameWinner.value
+                n_w = whoWinner()
+                nameWinner.postValue(n_w)
             }
         }
     }
@@ -70,19 +74,15 @@ class MyViewModel : ViewModel() {
                 (brest_potato.value!! >= 100 && brest_cabbage.value!! >= 100 && brest_carrot.value!! >= 100)
     }
 
-    private fun whoWinner() {
-        if (minsk_potato.value!! >= 100 && minsk_cabbage.value!! >= 100 && minsk_carrot.value!! >= 100) {
-            nameWinner = "Minsk"
+    private fun whoWinner(): String {
+        return if (minsk_potato.value!! >= 100 && minsk_cabbage.value!! >= 100 && minsk_carrot.value!! >= 100) {
+            "Minsk WINNER!"
         } else if (pinsk_potato.value!! >= 100 && pinsk_cabbage.value!! >= 100 && pinsk_carrot.value!! >= 100) {
-            nameWinner = "Pinsk"
+            "Pinsk WINNER!"
         } else if (brest_potato.value!! >= 100 && brest_cabbage.value!! >= 100 && brest_carrot.value!! >= 100) {
-            nameWinner = "Brest"
-        }
-    }
-
-    fun showWinner(context: Context) {
-        if (hasWinner()) {
-            Toast.makeText(context, "$nameWinner WINNER!", Toast.LENGTH_SHORT).show()
+            "Brest WINNER!"
+        } else {
+            ""
         }
     }
 }
