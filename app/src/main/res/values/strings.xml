@@ -13,4 +13,11 @@
     <string name="poland">Poland</string>
     <string name="lithuania">Lithuania</string>
     <string name="ukraine">Ukraine</string>
+    <string name="minsk">Minsk</string>
+    <string name="pinsk">Pinsk</string>
+    <string name="brest">Brest</string>
+    <string name="potatoes">Potatoes:</string>
+    <string name="cabbage">Cabbage:</string>
+    <string name="carrot">Carrot:</string>
+    <string name="start">Start</string>
 </resources>

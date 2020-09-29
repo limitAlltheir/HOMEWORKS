@@ -19,5 +19,9 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, Hw3Activity::class.java)
             startActivity(myIntent)
         }
+        button3.setOnClickListener {
+            val myIntent = Intent(this, MainActivity2::class.java)
+            startActivity(myIntent)
+        }
     }
 }
