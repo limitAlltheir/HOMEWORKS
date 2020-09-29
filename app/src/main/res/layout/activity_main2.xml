@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_hw_one_activity"
+    tools:context=".MainActivity2">
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center_horizontal"
+                    android:text="Minsk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="96dp"
+                    android:text="Potatoes:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/minsk_potato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="96dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="136dp"
+                    android:text="Cabbage:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/minsk_cabbage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="136dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="176dp"
+                    android:text="Carrot:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/minsk_carrot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="176dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center_horizontal"
+                    android:text="Brest"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="96dp"
+                    android:text="Potatoes:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/brest_potato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="96dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="136dp"
+                    android:text="Cabbage:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/brest_cabbage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="136dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="176dp"
+                    android:text="Carrot:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/brest_carrot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="176dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="130dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="32dp"
+                    android:gravity="center_horizontal"
+                    android:text="Pinsk"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="60sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="96dp"
+                    android:text="Potatoes:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/pinsk_potato"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="96dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="136dp"
+                    android:text="Cabbage:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/pinsk_cabbage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="136dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="176dp"
+                    android:text="Carrot:"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/pinsk_carrot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="176dp"
+                    android:text="0"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="30sp" />
+            </FrameLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/start_harvest_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Start"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
