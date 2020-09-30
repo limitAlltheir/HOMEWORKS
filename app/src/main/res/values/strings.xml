@@ -5,6 +5,7 @@
     <string name="button1">HW #1</string>
     <string name="button2">HW #2</string>
     <string name="button3">HW #3</string>
+    <string name="button4">HW #4</string>
     <string name="textSize">40dp</string>
     <string name="fontFamily">sans-serif-medium</string>
     <string name="editText">Enter image URL</string>
@@ -20,4 +21,6 @@
     <string name="cabbage">Cabbage:</string>
     <string name="carrot">Carrot:</string>
     <string name="start">Start</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
