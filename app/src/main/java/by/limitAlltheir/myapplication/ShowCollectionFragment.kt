@@ -15,4 +15,8 @@ class ShowCollectionFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_show_collection, container, false)
     }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+    }
 }

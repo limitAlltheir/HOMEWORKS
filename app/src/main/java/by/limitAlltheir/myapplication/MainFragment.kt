@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_add_coffee.*
-import kotlinx.android.synthetic.main.fragment_add_coffee.floating_action_button
+import kotlinx.android.synthetic.main.fragment_add_coffee.add_coffee_to_collection
 import kotlinx.android.synthetic.main.fragment_main.*
 
 class MainFragment : Fragment() {
