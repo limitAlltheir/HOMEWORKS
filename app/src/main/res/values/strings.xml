@@ -21,6 +21,10 @@
     <string name="cabbage">Cabbage:</string>
     <string name="carrot">Carrot:</string>
     <string name="start">Start</string>
+    <string name="show_coffee">Show coffee collection</string>
+    <string name="name_coffee">Enter name of coffee</string>
+    <string name="price_coffee">Enter price of coffee</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
