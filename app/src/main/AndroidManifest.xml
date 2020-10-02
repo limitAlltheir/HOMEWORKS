@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".CoffeeActivity"></activity>
+        <activity android:name=".RegistrationActivity"></activity>
+        <activity android:name=".CoffeeActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".MainActivity2" />
         <activity android:name=".CatActivity" />
