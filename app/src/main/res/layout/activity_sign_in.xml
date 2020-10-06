@@ -6,4 +6,13 @@
     android:layout_height="match_parent"
     tools:context=".SignInActivity">
 
+    <TextView
+        android:id="@+id/username_sign_in_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

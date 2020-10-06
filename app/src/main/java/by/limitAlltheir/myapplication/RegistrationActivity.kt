@@ -6,6 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_registration.*
+import kotlinx.android.synthetic.main.activity_sign_in.*
+
+private const val USERNAME_KEY = "username"
 
 class RegistrationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,6 +23,7 @@ class RegistrationActivity : AppCompatActivity() {
             if (it.isNullOrEmpty()) {
                 edit_text.isEnabled = true
                 edit_text.error = "Name mustn't be empty!"
+                rightUsername = false
             } else {
                 edit_text.error = null
                 rightUsername = true
@@ -30,10 +34,12 @@ class RegistrationActivity : AppCompatActivity() {
                 it.isNullOrEmpty() -> {
                     edit_password.isEnabled = true
                     edit_password.error = "Password mustn't be empty!"
+                    rightPassword = false
                 }
                 it.length in 1..7 -> {
                     edit_password.isEnabled = true
                     edit_password.error = "Password must be more then 8 symbols!"
+                    rightPassword = false
                 }
                 else -> {
                     edit_password.error = null
@@ -60,6 +66,8 @@ class RegistrationActivity : AppCompatActivity() {
             }
             .setPositiveButton(resources.getString(R.string.accept)) { _, _ ->
                 intent = Intent(this, SignInActivity::class.java)
+                intent.putExtra(USERNAME_KEY, edit_text.text.toString())
+                startActivity(intent)
             }
             .show()
     }
