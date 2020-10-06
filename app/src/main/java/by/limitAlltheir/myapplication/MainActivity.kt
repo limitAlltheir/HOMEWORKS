@@ -23,5 +23,9 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, MainActivity2::class.java)
             startActivity(myIntent)
         }
+        button4.setOnClickListener {
+            val myIntent = Intent(this, CoffeeActivity::class.java)
+            startActivity(myIntent)
+        }
     }
 }
