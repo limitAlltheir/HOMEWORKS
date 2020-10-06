@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".RegistrationActivity">
     <Button
-        android:id="@+id/btn1"
+        android:id="@+id/registration_user_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
