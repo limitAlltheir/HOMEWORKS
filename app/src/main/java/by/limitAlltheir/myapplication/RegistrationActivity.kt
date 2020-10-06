@@ -1,8 +1,12 @@
 package by.limitAlltheir.myapplication
 
+import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.Settings.Global.getString
 import androidx.core.widget.addTextChangedListener
+import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import kotlinx.android.synthetic.main.activity_registration.*
 
 class RegistrationActivity : AppCompatActivity() {
@@ -31,4 +35,19 @@ class RegistrationActivity : AppCompatActivity() {
             }
         }
     }
+
+    private fun successRegistration() {
+        MaterialAlertDialogBuilder(this)
+            .setTitle(resources.getString(R.string.title))
+            .setIcon(getDrawable(R.drawable.ic_outline_person_24))
+            .setMessage(resources.getString(R.string.supporting_text))
+            .setNeutralButton(resources.getString(R.string.cancel)) { dialog, which ->
+                dialog.cancel()
+            }
+            .setPositiveButton(resources.getString(R.string.accept)) { dialog, which ->
+                intent = Intent(this, SignInActivity::class.java)
+            }
+            .show()
+    }
 }
+
