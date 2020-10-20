@@ -5,29 +5,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.recyclerview.widget.LinearLayoutManager
 import by.limitAlltheir.myapplication.R
-import kotlinx.android.synthetic.main.fragment_recycler.*
+import by.limitAlltheir.myapplication.database.dao.DoctorDao
+import by.limitAlltheir.myapplication.database.DoctorDB
+import by.limitAlltheir.myapplication.database.Db
 
-class RecyclerFragment : Fragment() {
-
-    val adapter = DoctorAdapter()
+class AddDoctorFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(R.layout.fragment_recycler, container, false)
+        return inflater.inflate(R.layout.fragment_add_doctor, container, false)
     }
+
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
 
-        val rv = recycler_container
-        rv.adapter = adapter
-        rv.layoutManager = LinearLayoutManager(this.context)
-        rv.hasFixedSize()
+        val db: DoctorDao = Db.getDb(this.requireContext()).doctorDao()
 
     }
 }

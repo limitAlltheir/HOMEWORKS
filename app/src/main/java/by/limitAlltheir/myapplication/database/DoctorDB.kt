@@ -13,7 +13,7 @@ abstract class DoctorDB : RoomDatabase() {
     abstract fun doctorDao(): DoctorDao
 }
 
-object db {
+object Db {
     fun getDb(context: Context) {
         Room.databaseBuilder(context, DoctorDB::class.java, "DoctorDataBase").build()
     }

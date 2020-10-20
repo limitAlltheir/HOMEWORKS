@@ -9,5 +9,17 @@
         android:id="@+id/recyclerFragment"
         android:name="by.limitAlltheir.myapplication.database.RecyclerFragment"
         android:label="fragment_recycler"
-        tools:layout="@layout/fragment_recycler" />
+        tools:layout="@layout/fragment_recycler" >
+        <action
+            android:id="@+id/action_recyclerFragment_to_addDoctorFragment"
+            app:destination="@id/addDoctorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addDoctorFragment"
+        android:name="by.limitAlltheir.myapplication.database.AddDoctorFragment"
+        android:label="AddDoctorFragment" >
+        <action
+            android:id="@+id/action_addDoctorFragment_to_recyclerFragment"
+            app:destination="@id/recyclerFragment" />
+    </fragment>
 </navigation>
