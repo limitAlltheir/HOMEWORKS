@@ -10,14 +10,14 @@ import by.limitAlltheir.myapplication.database.entity.Doctor
 interface DoctorDao {
 
     @Insert
-    suspend fun addPerson(doc: Doctor)
+    suspend fun addDoctor(doc: Doctor)
 
     @Delete
-    suspend fun deletePerson(doc: Doctor)
+    suspend fun deleteDoctor(doc: Doctor)
 
     @Query("SELECT * FROM doctor_table")
-    suspend fun getAllPerson(): List<Doctor>
+    suspend fun getAllDoctors(): List<Doctor>
 
     @Query("DELETE FROM doctor_table WHERE id=:id")
-    suspend fun deletePersonById(id: Int)
+    suspend fun deleteDoctorById(id: Int)
 }

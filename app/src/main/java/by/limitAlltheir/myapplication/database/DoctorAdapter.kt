@@ -8,9 +8,7 @@ import by.limitAlltheir.myapplication.R
 import by.limitAlltheir.myapplication.database.entity.Doctor
 import kotlinx.android.synthetic.main.item.view.*
 
-class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
-
-    private var listDoctor = emptyList<Doctor>()
+class DoctorAdapter(private var listDoctor: List<Doctor>) : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
 
     class DoctorViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val docItem = view.doctor_item
@@ -26,9 +24,7 @@ class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
         return DoctorViewHolder(view)
     }
 
-    override fun getItemCount(): Int {
-        return listDoctor.size
-    }
+    override fun getItemCount(): Int = listDoctor.size
 
     override fun onBindViewHolder(holder: DoctorViewHolder, position: Int) {
 
@@ -38,4 +34,19 @@ class DoctorAdapter : RecyclerView.Adapter<DoctorAdapter.DoctorViewHolder>() {
         holder.docCab.text = listDoctor[position].cabinet
     }
 
+    fun setList(s: String, list: List<Doctor>) {
+        listDoctor = if (s.isEmpty()) {
+            list
+        } else {
+            list.filter {
+                it.name.contains(s, true) || it.position.contains(s, true) || it.cabinet.contains(s, true)
+            } as ArrayList
+        }
+        notifyDataSetChanged()
+    }
+
+    fun setList(list: List<Doctor>) {
+        listDoctor = list as ArrayList
+        notifyDataSetChanged()
+    }
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import by.limitAlltheir.myapplication.database.DataBaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
@@ -25,6 +26,10 @@ class MainActivity : AppCompatActivity() {
         }
         button4.setOnClickListener {
             val myIntent = Intent(this, CoffeeActivity::class.java)
+            startActivity(myIntent)
+        }
+        button5.setOnClickListener {
+            val myIntent = Intent(this, DataBaseActivity::class.java)
             startActivity(myIntent)
         }
     }

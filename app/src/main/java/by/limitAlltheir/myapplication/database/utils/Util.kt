@@ -25,4 +25,3 @@ suspend fun <R> launchForResult(task: suspend () -> R): R? {
     }
 
 }
-

@@ -14,7 +14,6 @@ abstract class DoctorDB : RoomDatabase() {
 }
 
 object Db {
-    fun getDb(context: Context) {
+    fun getDb(context: Context) =
         Room.databaseBuilder(context, DoctorDB::class.java, "DoctorDataBase").build()
-    }
 }

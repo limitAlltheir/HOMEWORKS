@@ -61,11 +61,12 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_add"
+        style="@style/Widget.MaterialComponents.Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_margin="16dp"
-        android:text="Добавить"
-        android:textSize="20sp" />
+        android:text="Добавить" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
