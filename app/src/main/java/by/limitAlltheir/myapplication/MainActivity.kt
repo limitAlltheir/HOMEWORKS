@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import by.limitAlltheir.myapplication.cryptoAPI.CryptoActivity
 import by.limitAlltheir.myapplication.database.DataBaseActivity
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -30,6 +31,10 @@ class MainActivity : AppCompatActivity() {
         }
         button5.setOnClickListener {
             val myIntent = Intent(this, DataBaseActivity::class.java)
+            startActivity(myIntent)
+        }
+        button6.setOnClickListener {
+            val myIntent = Intent(this, CryptoActivity::class.java)
             startActivity(myIntent)
         }
     }

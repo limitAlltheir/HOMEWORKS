@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewCrypto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:background="#FFFFFF"
+    android:alpha="0.8"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/name_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Bitcoin"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/price_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="13.458$"
+            android:textSize="25sp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name_view" />
+
+        <TextView
+            android:id="@+id/change_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="+0.0025$"
+            android:textColor="#669966"
+            android:textSize="25sp"
+            android:layout_margin="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/price_view" />
+
+        <ImageView
+            android:id="@+id/crypto_view"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

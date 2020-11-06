@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".database.DataBaseActivity"></activity>
+        <activity android:name=".cryptoAPI.CryptoActivity"></activity>
+        <activity android:name=".database.DataBaseActivity" />
         <activity android:name=".CoffeeActivity" />
         <activity android:name=".FragmentActivity" />
         <activity android:name=".MainActivity2" />

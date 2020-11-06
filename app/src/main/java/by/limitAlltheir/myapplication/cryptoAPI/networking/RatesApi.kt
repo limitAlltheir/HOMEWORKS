@@ -15,6 +15,6 @@ interface RatesApi {
         @Query("limit")
         limit: Int,
         @Query("convert")
-        convert: Int
+        convert: String
     ) : Deferred<Response<RatesResponse>>
 }
