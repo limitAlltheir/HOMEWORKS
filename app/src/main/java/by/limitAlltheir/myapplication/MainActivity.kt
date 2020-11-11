@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             val myIntent = Intent(this, CoffeeActivity::class.java)
             startActivity(myIntent)
         }
-        button5.setOnClickListener {
+        buttonReg.setOnClickListener {
             val myIntent = Intent(this, RegistrationActivity::class.java)
             startActivity(myIntent)
         }
