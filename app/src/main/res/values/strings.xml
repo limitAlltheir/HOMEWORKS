@@ -6,6 +6,7 @@
     <string name="button2">HW #2</string>
     <string name="button3">HW #3</string>
     <string name="button4">HW #4</string>
+    <string name="button5">Sign up</string>
     <string name="textSize">40dp</string>
     <string name="fontFamily">sans-serif-medium</string>
     <string name="editText">Enter image URL</string>
@@ -27,4 +28,12 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="registration">Registration</string>
+    <string name="name">Name</string>
+    <string name="password">Password</string>
+    <string name="title">Title</string>
+    <string name="supporting_text">Hello</string>
+    <string name="supporting_text_error">Error</string>
+    <string name="cancel">OK</string>
+    <string name="accept">Sign in</string>
 </resources>
