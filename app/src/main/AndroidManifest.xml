@@ -13,7 +13,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".sensor.SensorActivity"></activity>
+        <activity android:name=".fibonacci.FibonacciActivity"></activity>
+        <activity android:name=".sensor.SensorActivity" />
         <activity android:name=".cryptoAPI.CryptoActivity" />
         <activity android:name=".database.DataBaseActivity" />
         <activity android:name=".CoffeeActivity" />
